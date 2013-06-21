@@ -1,0 +1,57 @@
+{
+  "name" : "teacher",
+  "namespace" : "com.example.gradebook",
+  "path" : "/teacher",
+  "schema" : "com.example.gradebook.Teacher",
+  "doc" : "User: douglas\n Date: 6/21/13\n Time: 2:00 PM\n\ngenerated from: com.example.gradebook.impl.TeacherResource",
+  "collection" : {
+    "identifier" : {
+      "name" : "teacherId",
+      "type" : "long"
+    },
+    "supports" : [ "create", "delete", "get", "update" ],
+    "methods" : [ {
+      "method" : "create"
+    }, {
+      "method" : "get"
+    }, {
+      "method" : "update"
+    }, {
+      "method" : "delete"
+    } ],
+    "entity" : {
+      "path" : "/teacher/{teacherId}",
+      "subresources" : [ {
+        "name" : "classes",
+        "namespace" : "com.example.gradebook",
+        "path" : "/teacher/{teacherId}/classes",
+        "schema" : "com.example.gradebook.ClassSession",
+        "doc" : "User: douglas\n Date: 6/23/13\n Time: 9:13 PM\n\ngenerated from: com.example.gradebook.impl.ClassSessionResource",
+        "collection" : {
+          "identifier" : {
+            "name" : "classesId",
+            "type" : "long"
+          },
+          "supports" : [ "create", "delete", "get", "update" ],
+          "methods" : [ {
+            "method" : "create"
+          }, {
+            "method" : "get",
+            "parameters" : [ {
+              "name" : "grade",
+              "type" : "boolean",
+              "default" : "false"
+            } ]
+          }, {
+            "method" : "update"
+          }, {
+            "method" : "delete"
+          } ],
+          "entity" : {
+            "path" : "/teacher/{teacherId}/classes/{classesId}"
+          }
+        }
+      } ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "Teacher",
+  "namespace": "com.example.gradebook",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "The teacher's name"
+    }
+  ]
+}

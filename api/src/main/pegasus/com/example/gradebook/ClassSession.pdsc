@@ -1,0 +1,29 @@
+{
+   "type": "record",
+   "name": "ClassSession",
+   "namespace": "com.example.gradebook",
+   "doc": "A class session, including students and a teacher",
+   "fields": [
+     {
+       "name": "name",
+       "type": "string",
+       "doc": "The name of the class"
+     },
+     {
+       "name": "description",
+       "type": "string",
+       "doc": "A description of the class"
+     },
+     {
+       "name": "period",
+       "type": "ClassPeriod",
+       "doc": "The time of the class"
+     },
+     {
+       "name": "meanGrade",
+       "type": "double",
+       "doc": "The mean grade of students in this class.",
+       "optional": true
+     }
+   ]
+ }

@@ -1,0 +1,30 @@
+{
+  "name" : "classAttendees",
+  "namespace" : "com.example.gradebook",
+  "path" : "/classAttendees",
+  "schema" : "com.example.gradebook.ClassAttendee",
+  "doc" : "User: douglas\n Date: 6/23/13\n Time: 10:44 PM\n\ngenerated from: com.example.gradebook.impl.ClassAttendeesResource",
+  "association" : {
+    "assocKeys" : [ {
+      "name" : "classSessionId",
+      "type" : "long"
+    }, {
+      "name" : "studentId",
+      "type" : "long"
+    }, {
+      "name" : "teacherId",
+      "type" : "long"
+    } ],
+    "supports" : [ "delete", "get", "update" ],
+    "methods" : [ {
+      "method" : "get"
+    }, {
+      "method" : "update"
+    }, {
+      "method" : "delete"
+    } ],
+    "entity" : {
+      "path" : "/classAttendees/teacherId={teacherId}&studentId={studentId}&classSessionId={classSessionId}"
+    }
+  }
+}

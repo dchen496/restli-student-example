@@ -1,0 +1,33 @@
+{
+  "name" : "student",
+  "namespace" : "com.example.gradebook",
+  "path" : "/student",
+  "schema" : "com.example.gradebook.Student",
+  "doc" : "User: douglas\n Date: 6/21/13\n Time: 1:51 PM\n\ngenerated from: com.example.gradebook.impl.StudentResource",
+  "collection" : {
+    "identifier" : {
+      "name" : "studentId",
+      "type" : "long"
+    },
+    "supports" : [ "create", "delete", "get", "update" ],
+    "methods" : [ {
+      "method" : "create"
+    }, {
+      "method" : "get"
+    }, {
+      "method" : "update"
+    }, {
+      "method" : "delete"
+    } ],
+    "finders" : [ {
+      "name" : "grade",
+      "parameters" : [ {
+        "name" : "grade",
+        "type" : "int"
+      } ]
+    } ],
+    "entity" : {
+      "path" : "/student/{studentId}"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ClassAttendee",
+  "namespace": "com.example.gradebook",
+  "doc": "A record of a student attending a class, including a grade",
+  "type": "record",
+  "fields": [
+    {
+      "name": "grade",
+      "type": "double",
+      "optional": true
+    }
+  ]
+}

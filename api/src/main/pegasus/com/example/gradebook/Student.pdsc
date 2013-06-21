@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "Student",
+  "namespace": "com.example.gradebook",
+  "doc": "A student with several classes and assignments",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "The student's name"
+    },
+    {
+      "name": "grade",
+      "type": "int",
+      "doc": "The student's grade level"
+    }
+  ]
+}

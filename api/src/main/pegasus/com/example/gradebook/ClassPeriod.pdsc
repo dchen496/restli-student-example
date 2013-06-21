@@ -1,0 +1,10 @@
+{
+  "type": "enum",
+  "name": "ClassPeriod",
+  "namespace": "com.example.gradebook",
+  "symbols": [
+    "MORNING",
+    "AFTERNOON",
+    "EVENING"
+  ]
+}
